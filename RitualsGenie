@@ -1,0 +1,47 @@
+{
+  "pluginAlias": "Homebridge Rituals Genie",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true,
+        "default": "The name of your Accessory"
+      },
+      "email": {
+        "title": "E-Mail",
+        "type": "string",
+        "required": true,
+        "default": "Your e-mail address"
+      },
+      "password": {
+        "title": "Password",
+        "type": "string",
+        "required": true,
+        "default": "Your password"
+      },
+      "devices": {
+        "type": "array",
+        "title": "Devices",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Device Name",
+              "type": "string",
+              "required": true
+            },
+            "id": {
+              "title": "Device ID",
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
